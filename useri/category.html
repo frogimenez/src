@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand navbar-light bg-light">
+        <ul class="nav navbar-nav">
+            <li class="nav-item ">
+                <a class="nav-link" href="todos.html">ToDos</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Categorias <span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+    </nav>
+    <main class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 p-4 my-auto">
+                <form class="card card-body" id="categoryForm">
+                    <div class="form-group">
+                        <input type="text" id="categoryName" placeholder="category name" class="form-control" autofocus>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="categoryDescription" placeholder="description" class="form-control" autofocus>
+                    </div>
+                    <button type="submit" class="btn-dark">Guardar</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="flex flex-row flex-wrap d-flex" id="categoryList">
+        </div>
+    
+    </main>
+
+    
+    <script src="./crudcategory.js"></script>
+</body>
+
+</html>

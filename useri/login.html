@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+</head>
+
+<body>
+    <main class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="card text-center ">
+                    <div class="card-header">
+                      Login
+                    </div>
+                    <div class="card-body justify-content-left">
+                        
+                        <form id="loginForm">
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="password" placeholder="">
+
+                            </div>
+                            <div class="mb-3">
+                                <button type="submit" class="btn btn-danger">Login</button>
+
+                            </div>
+                        </form>   
+                    </div>
+                    <div class="card-footer text-muted">
+                       No está registrado? <a href="register.html">Regístrese ahora</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./login.js"></script>
+</body>
+
+</html>
